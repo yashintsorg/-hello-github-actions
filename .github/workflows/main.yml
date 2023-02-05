@@ -15,10 +15,3 @@ jobs:
 
     - name: Run a script
       run: sh script.sh
-  get-secret: 
-    runs-on: ubuntu-latest
-    steps: 
-      - name: Retrieve secret 
-        env: 
-          super_secret: ${{ secrets.MY_SECRET }}
-        run: echo "$super_secret"
